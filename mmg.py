@@ -7,4 +7,9 @@ CODE_LENGTH = 4
 
 def generate_Code():
     code = []
-    
+
+    for _ in range(CODE_LENGTH):
+        color = random.choice(COLORS)
+        code.append(color)
+
+    return code
